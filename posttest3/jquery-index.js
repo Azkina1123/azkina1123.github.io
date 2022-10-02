@@ -13,6 +13,33 @@ const contentLoad = document.getElementsByClassName("content-load");
 const dashboard = header.getElementsByClassName("dashboard")[0];
 const search = header.getElementsByClassName("search")[0];
 
+// =========================================================
+//                          ALERT
+// =========================================================
+
+dashboard.addEventListener(
+  "click", function () {
+    alert("Coming Soon!\nPage not available yet.");
+  }
+)
+
+search.addEventListener(
+  "click", function () {
+    alert("Coming Soon!\nPage not available yet.");
+  }
+)
+
+// semua content-load diberikan alert
+for (i = 0; i < contentLoad.length; i++) {
+  contentLoad[i].addEventListener(
+    "click", function () {
+      alert("Coming Soon!\nPage not available yet.");
+    }
+  )
+}
+
+
+
 ["dblclick", "mouseenter", "mouseleave"].forEach(
   function (event) {
     if (event == "dblclick") {
@@ -276,30 +303,6 @@ function lightModeActive() {
   }
 );
 
-// =========================================================
-//                          ALERT
-// =========================================================
-
-// semua content-load diberikan alert
-for (i=0; i<contentLoad.length; i++) {
-  contentLoad[i].addEventListener(
-    "click", function() {
-      alert("Coming Soon!\nPage not available yet.");
-    }
-  )
-}
-
-dashboard.addEventListener(
-  "click", function() {
-    alert("Coming Soon!\nPage not available yet.");
-  }
-)
-
-search.addEventListener(
-  "click", function() {
-    alert("Coming Soon!\nPage not available yet.");
-  }
-)
 
 // tampilkan pop up
 function openPopUp(img, name, price) {

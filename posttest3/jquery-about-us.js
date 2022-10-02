@@ -6,8 +6,22 @@
 const header = document.getElementsByTagName("header")[0];
 const footer = document.getElementsByTagName("footer")[0];
 const nav = document.querySelectorAll("nav a");
+const dashboard = header.getElementsByClassName("dashboard")[0];
+const search = header.getElementsByClassName("search")[0];
 const mode = document.getElementById("mode");
 const photo = document.getElementsByClassName("photo")[0];
+
+dashboard.addEventListener(
+  "click", function () {
+    alert("Coming Soon!\nPage not available yet.");
+  }
+)
+
+search.addEventListener(
+  "click", function () {
+    alert("Coming Soon!\nPage not available yet.");
+  }
+)
 
 function darkModeActive() {
   header.style.background = "#2a2a47";

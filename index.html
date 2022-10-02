@@ -1,9 +1,3 @@
-<!-- 
-    Nama : Aziizah Oki Shofrina
-    NIM  : 2109106004
-    Informatika A1'21
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,185 +5,144 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="style.css">
-  <title> Tarvita Pastel | Home </title>
+  <title> AZKINA1123 </title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap');
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+
+      display: flex;
+      justify-content: center;
+
+      background-image: url("bg.jpg");
+      background-size: cover;
+
+      font-family: 'Gemunu Libre', sans-serif;
+    }
+
+    .container {
+      width: 50%;
+      height: 500px;
+
+      margin-top: 3%;
+      background-color: #37304a90;
+      border-radius: 20px;
+      box-shadow: 20px 0px 10px rgba(0, 0, 0, 0.329),
+                  -20px 0px 10px rgba(0, 0, 0, 0.329);
+
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .bio {
+      /* background-color: aqua; */
+
+      text-align: center;
+      line-height: 40pt;
+      font-size: 30pt;
+
+      margin: 10px;
+
+      color: #c0c4d1;
+    }
+
+    .main-content {
+      /* background-color: antiquewhite; */
+
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .posttest-list{
+      /* background-color: #6b7ab033; */
+
+      width: 90%;
+      margin: 10px;
+      border-radius: 20px;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+    }
+
+    .main-content h1 {
+      color: #d5d8e0;
+    }
+
+    .posttest {
+      height: 100px;
+      width: 100px;
+      line-height: 100px;
+      text-align: center;
+      
+      margin: 10px;
+      
+      background-color: #7e8dc36b;
+      font-size: 20pt;
+      color: #d5d8e0;
+      border-radius: 20%;
+
+
+    }
+
+    .posttest:hover {
+      background-color: #6b7ab033;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+
+  </style>
 </head>
 
 <body>
 
-  <header>
+  <div class="container">
 
-    <nav class="nav-left">
-      <a href="#"> 
-        <img src="img/menu.png" alt="">
-      </a>
+    <div class="bio">
+      <b>
+        Aziizah Oki Shofrina <br>
+        2109106004 <br>
+        Informatika A'21 <br>
 
-    </nav>
-    
-    <a href="index.html">
-      <h1> Tarvita Pastel </h1>
-    </a>
-    
-    <nav class="nav-right">
-      <a href="index.html"> Home </a>
-      <a href="about-us.html"> About Us </a>
-      <a href="#">
-        <img src="img/search.png" alt="">
-      </a>
-    </nav>
-
-
-  </header>
-
-  <div class="intro">
-    <!-- bg img -->
-
-    <div class="intro-content">
-      <!-- bg black -->
-
-      
-      <div class="img"></div>
-      
-      <h1> Welcome to <br> Tarvita Pastel! </h1>
-
-      <p>
-        <span class="description">
-          Provide your needs for the beauty of art. <br>
-        </span>
-
-        <span class="quotes">
-          Love of beauty is taste.<br>
-          The creation of beauty is art. <br>
-  
-          <i> - Ralph Waldo Emerson </i>
-        </span>
-        
-      </p>
-      
-    </div>
-  </div>
-    
-  <div class="page-content">
-
-    <div class="category">
-      <section>
-        <div class="category-title">
-          <!-- title -->
-        
-          <h1> Paintings </h1>
-          <p> Decorate your room with our pantings. </p>
-        </div>
-        
-        <div class="category-container">
-          <!-- kolom -->
-        
-          <div class="category-content painting-content-1">
-            <!-- field -->
-            <div class="img painting-1"></div>
-            <h3> Hirondelle Amour Painting </h3>
-            <p> 
-              Hand-painted canvas reproduction with quality oil painting. <br>
-              <span class="price"> IDR 20.000.000 </span>
-            </p>
-          </div>
-
-          <div class="category-content painting-content-2">
-            <!-- field -->
-            <div class="img painting-2"></div>
-            <h3> Koi Alpha Tree Painting </h3>
-            <p> 
-              Koi fish painting with LED FLS and size 50x100 cm. <br>
-              <span class="price"> IDR 2.190.000 </span>
-            </p>
-          </div>
-
-          <div class="category-content painting-content-3">
-            <!-- field -->
-            <div class="img painting-3"></div>
-            <h3> Seascape Painting </h3>
-            <p> 
-              Large art hand-painted 4pcs/set oil painting on canvas unframed. <br>
-              <span class="price"> IDR 690.909 </span>
-            </p>
-          </div>
-
-          <div class="category-content painting-content-4">
-            <!-- field -->
-            <div class="img painting-4"></div>
-            <h3> Abstract City Painting </h3>
-            <p> 
-              Landscape painting with modern canvas for living room decoration. <br>
-              <span class="price"> IDR 4.976.784 </span>
-            </p>
-          </div>
-        
-        </div>
-      </section>
-  
-      <section>
-        <div class="category-title">
-          <!-- title -->
-        
-          <h1> Tools </h1>
-          <p> Create your own painting with our stuffs. </p>
-        </div>
-        
-        <div class="category-container">
-          <!-- kolom -->
-        
-          <div class="category-content tool-content-1">
-            <!-- field -->
-            <div class="img tool-1"></div>
-            <h3> Paint Brushes </h3>
-            <p>
-              Set professional brushes for acrylic, watercolor, and oil painting. <br>
-              <span class="price"> IDR 25.500 </span>
-            </p>
-          </div>
-          <div class="category-content tool-content-2">
-            <!-- field -->
-            <div class="img tool-2"></div>
-            <h3> Painting Canvas </h3>
-            <p>
-              High quality painting canvas with medium texture cotton duck fabric. <br>
-              <span class="price"> IDR 38.402 </span>
-            </p>
-          </div>
-          <div class="category-content tool-content-3">
-            <!-- field -->
-            <div class="img tool-3"></div>
-            <h3> Watercolor Paint </h3>
-            <p>
-              Paint with the finest materials, smooth application, and true color. <br>
-              <span class="price"> IDR 29.450 </span>
-            </p>
-          </div>
-          <div class="category-content tool-content-4">
-            <!-- field -->
-            <div class="img tool-4"></div>
-            <h3> Plastic Pallete Painting </h3>
-            <p>
-              Brand new and high quality pallete. Suitable for all water based media. <br>
-              <span class="price"> IDR 59.990 </span>
-            </p>
-          </div>
-        
-        </div>
-      </section>
-
+      </b>
     </div>
 
-      
+    <div class="main-content">
+      <h1> POSTTEST: </h1>
+
+      <div class="posttest-list">
+        
+        <a href="posttest1/index.html">
+          <div class="posttest 1"> 1 </div>
+        </a>
+        
+        <a href="posttest2/index.html">
+          <div class="posttest 2"> 2 </div>
+        </a>
+
+        <a href="posttest3/index.html">
+          <div class="posttest 3"> 3 </div>
+        </a>
+
+      </div>
+    </div>
+
   </div>
-
-
-
-  <footer>
-    <p>
-      Copyright 2022 - by Aziizah Oki Shofrina
-    </p>
-  </footer>
 
 </body>
 

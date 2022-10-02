@@ -9,6 +9,9 @@ const nav = document.querySelectorAll("nav a");
 const imgIntro = document.getElementsByClassName("intro-img")[0];
 const description = document.querySelector(".intro .description");
 const mode = document.getElementById("mode");
+const contentLoad = document.getElementsByClassName("content-load");
+const dashboard = header.getElementsByClassName("dashboard")[0];
+const search = header.getElementsByClassName("search")[0];
 
 ["dblclick", "mouseenter", "mouseleave"].forEach(
   function (event) {
@@ -72,8 +75,6 @@ const mode = document.getElementById("mode");
 // =========================================================
 //                    LIGHT / DARK MODE
 // =========================================================
-
-
 
 
 function darkModeActive() {
@@ -230,9 +231,7 @@ function lightModeActive() {
   );
 }
 
-
 // dark/light mode
-
 ["mouseover", "mouseleave", "click"].forEach(
   function(event) {
     if (event == "mouseover") {
@@ -277,7 +276,10 @@ function lightModeActive() {
   }
 );
 
-const contentLoad = document.getElementsByClassName("content-load");
+// =========================================================
+//                          ALERT
+// =========================================================
+
 // semua content-load diberikan alert
 for (i=0; i<contentLoad.length; i++) {
   contentLoad[i].addEventListener(
@@ -286,6 +288,18 @@ for (i=0; i<contentLoad.length; i++) {
     }
   )
 }
+
+dashboard.addEventListener(
+  "click", function() {
+    alert("Coming Soon!\nPage not available yet.");
+  }
+)
+
+search.addEventListener(
+  "click", function() {
+    alert("Coming Soon!\nPage not available yet.");
+  }
+)
 
 // tampilkan pop up
 function openPopUp(img, name, price) {

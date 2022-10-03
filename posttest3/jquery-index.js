@@ -12,6 +12,8 @@ const mode = document.getElementById("mode");
 const contentLoad = document.getElementsByClassName("content-load");
 const dashboard = header.getElementsByClassName("dashboard")[0];
 const search = header.getElementsByClassName("search")[0];
+const checkOut = document.getElementsByClassName("check-out")[0];
+const cancelCO = document.getElementsByClassName("cancel-co")[0];
 
 // =========================================================
 //                          ALERT
@@ -37,6 +39,12 @@ for (i = 0; i < contentLoad.length; i++) {
     }
   )
 }
+
+checkOut.addEventListener(
+  "click", function() {
+    alert("Coming Soon!\nPage not available yet.");
+  }
+);
 
 
 
@@ -117,6 +125,16 @@ function darkModeActive() {
             nav[1].style.color = "white";
           }
         );
+        checkOut.addEventListener(
+          "mouseenter", function() {
+            checkOut.style.color = "white";
+          }
+        );
+        cancelCO.addEventListener(
+          "mouseenter", function() {
+            cancelCO.style.color = "white";
+          }
+        );
         nav[2].addEventListener(
           "mouseenter", function() {
             nav[2].style.color = "white";
@@ -128,13 +146,23 @@ function darkModeActive() {
           "mouseleave", function() {
             nav[1].style.color = "#A8C7F2";
           }
-        );
-        nav[2].addEventListener(
-          "mouseleave", function() {
-            nav[2].style.color = "#A8C7F2";
-          }
-        );
-
+          );
+          nav[2].addEventListener(
+            "mouseleave", function() {
+              nav[2].style.color = "#A8C7F2";
+            }
+            );
+          checkOut.addEventListener(
+            "mouseleave", function() {
+              checkOut.style.color = "#2d243b";
+            }
+          );
+          cancelCO.addEventListener(
+            "mouseleave", function() {
+              cancelCO.style.color = "#2d243b";
+            }
+          );
+            
       } else if (event == "click") {
         nav[1].addEventListener(
           "click", function() {

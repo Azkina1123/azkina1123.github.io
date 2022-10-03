@@ -163,12 +163,12 @@ function lightModeActive() {
 
         checkOut.addEventListener(
           event, function () {
-            checkOut.style.color = "#white";
+            checkOut.style.color = "white";
           }
         );
         cancelCO.addEventListener(
           event, function () {
-            cancelCO.style.color = "#white";
+            cancelCO.style.color = "white";
           }
         );
 

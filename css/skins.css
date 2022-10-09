@@ -1,0 +1,236 @@
+/* --- LIGHT MODE --- */
+:root {
+  --skin-bg: rgba(255, 255, 255, 0.523);
+  --skin-img: url("../img/light-mode.png");
+
+  --header-bg: #A8C7F2;
+  --header-title: #5a569a;
+  --sidebar-bg: #ebf2fc;
+  --sidebar-cl-b: black;
+  --sidebar-cl-a: #5a569a;
+  --sidebar-bg-hover:#504e682c;
+  --intro-container-bg: #a7c0e086;
+  --intro-cl-title: #659ce8;
+  --intro-bg: url("../img/intro-bg-3.jpg");
+
+  --intro-cl-desc: #302e3e;
+  --intro-cl-desc-hover: black;
+  --main-content-bg: white;
+  --main-content-cl: #1d1d31;
+  --content-container-bg:#f6f9fd;
+  --content-container-bg-sc: #ffffff9e;
+  --title-price: black;
+
+  --pop-up-bg:#e4eefbce;
+  --pop-up-cl: #34324f;
+  --pop-up-btn-bg: #6b66aa;
+  --pop-up-btn-bg-hover: #34324f;
+  --pop-up-btn-cl: white;
+
+  --submit-bg: #A8C7F2;
+  --submit-bg-hover: #a7c0e05f;
+}
+
+/* --- DARK MODE --- */
+.dark {
+  --skin-bg: rgba(0, 0, 0, 0.523);
+  --skin-img: url("../img/dark-mode.png");
+
+  --header-bg: #1d1d31;
+  --header-title: #e4dcf5;
+  --sidebar-bg: #302e3e;
+  --sidebar-cl-b: white;
+  --sidebar-cl-a: #d0e1f8;
+  --sidebar-bg-hover:#a8c7f23d;
+  --intro-container-bg: #1d1d31b5;
+  --intro-cl-title: #bebdd3;
+  --intro-bg: url("../img/intro-bg-4.jpg");
+
+  --intro-cl-desc: #d0e1f8;
+  --intro-cl-desc-hover:white;
+  --main-content-bg: #504e68;
+  --main-content-cl: #f0f6fc;
+
+  --content-container-bg: #403e53;
+  --content-container-bg-sc: #48466072;
+  --title-price:white;
+
+  --pop-up-bg: #2d243bbd;
+  --pop-up-cl: #bebdd3;
+  --pop-up-btn-bg: #504e68;
+  --pop-up-btn-bg-hover: #403e53;
+  --pop-up-btn-cl: #f0f6fc;
+  --submit-bg: #bebdd3;
+  --submit-bg-hover: #a7c0e05f;
+}
+
+body {
+  background-color: var(--sidebar-bg);
+}
+.dark {
+  background-color: var(--sidebar-bg);
+}
+
+/* ======================================================= */
+/*                          BUTTON                         */
+/* ======================================================= */
+
+.skin-button {
+  background-color: var(--skin-bg);
+}
+.skin-button .img {
+  background-image: var(--skin-img);
+}
+
+/* ======================================================= */
+/*                          HEADER                         */
+/* ======================================================= */
+
+
+ header,  footer {
+  background-color: var(--header-bg);
+  color: var(--sidebar-bg);
+}
+
+ header h1 {
+  color: var(--header-title);
+}
+
+/* ======================================================= */
+/*                          SIDEBAR                        */
+/* ======================================================= */
+
+.sidebar-wrapper {
+  background-color: var(--sidebar-bg);
+}
+
+.sidebar-wrapper b {
+  color: var(--sidebar-cl-b);
+}
+.sidebar-wrapper a {
+  color: var(--sidebar-cl-a);
+}
+
+.sidebar-wrapper .container li:hover {
+  background-color: var(--sidebar-bg-hover);
+}
+
+/* ======================================================= */
+/*                          CONTENT                        */
+/* ======================================================= */
+
+ .content-wrapper {
+  background-color: var(--sidebar-bg);
+}
+
+/* ----------------------------------------------------- */
+/*                          INTRO                        */
+/* ----------------------------------------------------- */
+
+.intro-img {
+  border-color: var(--header-bg);
+}
+
+.intro {
+  background-image: var(--intro-bg);
+}
+
+.intro .container {
+  background-color: var(--intro-container-bg);
+}
+
+.intro-desc h1 {
+  color: var(--intro-cl-title);
+}
+
+.intro-desc p {
+  color: var(--intro-cl-desc);
+}
+
+.intro-desc .description:hover {
+  color: var(--intro-cl-desc-hover);
+}
+
+
+/* ----------------------------------------------------- */
+/*                       MAIN CONTENT                    */
+/* ----------------------------------------------------- */
+
+.main-content {
+  box-shadow: 5px 0px 2px #00000017,
+    -5px 0px 2px #00000017;
+
+}
+
+.main-content,
+.content-container,
+.content-container section,
+.content-container .title,
+.content-container .container {
+  background-color: var(--main-content-bg);
+  color: var(--main-content-cl);
+}
+
+.product {
+  background-color: var(--content-container-bg);
+}
+
+.product h3,
+.product .price {
+  color: var(--title-price);
+}
+
+.product .description {
+  color: var(--intro-cl-desc);
+}
+
+/* ----------------------------------------------------- */
+/*                          POP UP                       */
+/* ----------------------------------------------------- */
+
+.pop-up {
+  background-color: var(--pop-up-bg);
+}
+
+.pop-up-content {
+  color: var(--pop-up-cl);
+}
+
+.check-out,
+.cancel-co {
+  color: var(--pop-up-btn-cl);
+  background-color: var(--pop-up-btn-bg);
+}
+
+.check-out:hover,
+.cancel-co:hover {
+  background-color: var(--pop-up-btn-bg-hover);
+}
+
+/* ======================================================= */
+/*                         ABOUT US                        */
+/* ======================================================= */
+
+ .profile.container {
+  background-color: var(--content-container-bg);
+}
+
+ .profile-content {
+  background-color: var(--content-container-bg-sc);
+}
+
+/* ====================================================== */
+/*                       ADD PRODUCT                      */
+/* ====================================================== */
+
+ .add-product table {
+  background-color: var(--content-container-bg);
+}
+ .add-product input[type="submit"] {
+  background-color: var(--submit-bg);
+}
+ .add-product input[type="submit"]:hover {
+  background-color: var(--submit-bg-hover);
+}
+
+

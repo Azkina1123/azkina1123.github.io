@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png">
+  <title> AZKINA1123 </title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap');
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+
+      display: flex;
+      justify-content: center;
+
+      background-image: url("bg.jpg");
+      background-size: cover;
+
+      font-family: 'Gemunu Libre', sans-serif;
+    }
+
+    .container {
+      width: 50%;
+      height: 500px;
+
+      margin-top: 3%;
+      background-color: #37304a90;
+      border-radius: 20px;
+      box-shadow: 20px 0px 10px rgba(0, 0, 0, 0.329),
+                  -20px 0px 10px rgba(0, 0, 0, 0.329);
+
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .bio {
+      /* background-color: aqua; */
+
+      text-align: center;
+      line-height: 40pt;
+      font-size: 30pt;
+
+      margin: 10px;
+
+      color: #c0c4d1;
+    }
+
+    .main-content {
+      /* background-color: antiquewhite; */
+
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .posttest-list{
+      /* background-color: #6b7ab033; */
+
+      width: 90%;
+      margin: 10px;
+      border-radius: 20px;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+    }
+
+    .main-content h1 {
+      color: #d5d8e0;
+    }
+
+    .posttest {
+      height: 100px;
+      width: 100px;
+      line-height: 100px;
+      text-align: center;
+      
+      margin: 10px;
+      
+      background-color: #7e8dc36b;
+      font-size: 20pt;
+      color: #d5d8e0;
+      border-radius: 20%;
+
+
+    }
+
+    .posttest:hover {
+      background-color: #6b7ab033;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @media screen and (min-width: 240px) and (max-width:1000px) {
+
+      .container {
+        width: 80%;
+        height: fit-content;
+
+        margin: 10% auto;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="bio">
+      <b>
+        Aziizah Oki Shofrina <br>
+        2109106004 <br>
+        Informatika A'21 <br>
+
+      </b>
+    </div>
+
+    <div class="main-content">
+      <h1> POSTTEST: </h1>
+
+      <div class="posttest-list">
+        
+        <a href="posttest1/index.html" target="_blank">
+          <div class="posttest 1"> 1 </div>
+        </a>
+        
+        <a href="posttest2/index.html" target="_blank">
+          <div class="posttest 2"> 2 </div>
+        </a>
+
+        <a href="posttest3/index.html" target="_blank">
+          <div class="posttest 3"> 3 </div>
+        </a>
+
+        <a href="posttest4/index.php" target="_blank">
+          <div class="posttest 4"> 4 </div>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+:root {
+  /* --- LIGHT MODE --- */
+  --light1: #5a569a;
+  --light2: #659ce8;
+  --light3: #A8C7F2;
+  --light4: #ebf2fc;
+  --light5: #ebf2fc;
+  --light6: #f6f9fd;
+  
+  /* --- DARK MODE --- */
+  --dark1: #1d1d31;
+  --dark2: #302e3e;
+  --dark3: #403e53;
+  --dark4: #504e68;
+  --dark5: #bebdd3;
+  --dark6: #d0e1f8;
+  --dark7: #f0f6fc;
+  --dark8: #e4dcf5;
+}
+
+body {
+  background-color: var(--light4);
+}
+body.dark {
+  background-color: var(--dark2);
+}
+
+body .skin-button {
+  background-color: rgba(255, 255, 255, 0.523);
+}
+body .skin-button .img {
+  background-image: url("../img/light-mode.png");
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.dark .skin-button {
+  background-color: rgba(0, 0, 0, 0.523);
+}
+body.dark .skin-button .img {
+  background-image: url("../img/dark-mode.png");
+}
+
+
+/* ======================================================= */
+/*                          HEADER                         */
+/* ======================================================= */
+
+
+body header, body footer {
+  background-color: var(--light3);
+  color: var(--dark2);
+}
+
+body header h1 {
+  color: var(--light1);
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.dark header, body.dark footer {
+  background-color: var(--dark1);
+  color: var(--dark7);
+}
+
+body.dark header h1 {
+  color: var(--dark8);
+}
+
+/* ======================================================= */
+/*                          SIDEBAR                        */
+/* ======================================================= */
+
+body .sidebar-wrapper {
+  background-color: var(--light4);
+}
+
+body .sidebar-wrapper b {
+  color: black;
+}
+body .sidebar-wrapper a {
+  color: var(--light1);
+}
+
+body .sidebar-wrapper .container li:hover {
+  background-color: #504e682c;
+}
+
+/* .sidebar .cin */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.dark .sidebar-wrapper {
+  background-color: var(--dark2);
+}
+body .sidebar .container {
+  background-color: var(--dark2);
+}
+body.dark .sidebar-wrapper b {
+  color: white;
+}
+body.dark .sidebar-wrapper a {
+  color: var(--dark6);
+}
+body .sidebar-wrapper .container li:hover {
+  background-color: #a8c7f23d;
+}
+
+/* ======================================================= */
+/*                          CONTENT                        */
+/* ======================================================= */
+
+body .content-wrapper {
+  background-color: var(--light4);
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.dark .content-wrapper {
+  background-color: var(--dark2);
+}
+/* ----------------------------------------------------- */
+/*                          INTRO                        */
+/* ----------------------------------------------------- */
+
+body .intro-img {
+  border-color: var(--light3);
+}
+
+body .intro {
+  background-image: url("../img/intro-bg-3.jpg");
+}
+
+body .intro .container {
+  background-color: #a7c0e05f;
+}
+
+body .intro-desc h1 {
+  color: var(--light2);
+}
+
+body .intro-desc p {
+  color: var(--dark2);
+}
+
+body .intro-desc .description:hover {
+  color: black;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.dark .intro-img {
+  border-color: var(--dark3);
+}
+
+body.dark .intro {
+  background-image: url("../img/intro-bg-4.jpg");
+}
+
+body.dark .intro .container {
+  background-color: #1d1d31b5;
+}
+
+body.dark .intro-desc h1 {
+  color: var(--dark5);
+}
+
+body.dark .intro-desc p {
+  color: var(--dark6);
+}
+
+body.dark .intro-desc .description:hover {
+  color: white;
+}
+
+/* ----------------------------------------------------- */
+/*                       MAIN CONTENT                    */
+/* ----------------------------------------------------- */
+
+body .main-content {
+  box-shadow: 5px 0px 2px #00000017,
+    -5px 0px 2px #00000017;
+
+}
+
+body .main-content,
+body .content-container,
+body .content-container section,
+body .content-container .title,
+body .content-container .container {
+  background-color: white;
+  color: var(--dark1);
+}
+
+body .product {
+  background-color: var(--light6);
+}
+
+body .product h3,
+body .product .price {
+  color: black;
+}
+
+body .product .description {
+  color: var(--dark1);
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.dark .main-content {
+  box-shadow: 5px 0px 2px #00000017,
+  -5px 0px 2px #00000017;
+
+}
+
+body.dark .main-content,
+body.dark .content-container,
+body.dark .content-container section,
+body.dark .content-container .title,
+body.dark .content-container .container {
+  background-color: var(--dark4);
+  color: var(--dark7);
+}
+
+body.dark .product{
+  background-color: var(--dark3);
+}
+
+body.dark .product h3, 
+body.dark .product .price {
+  color: var(--dark7);
+}
+
+body.dark .product .description {
+  color: var(--dark6);
+}
+
+/* ----------------------------------------------------- */
+/*                          POP UP                       */
+/* ----------------------------------------------------- */
+
+body .pop-up {
+  background-color: #e4eefbce;
+}
+body .pop-up-content {
+  color: #34324f;
+}
+
+body .check-out,
+body .cancel-co {
+  color: white;
+  background-color: #6b66aa;
+}
+body .check-out:hover,
+body .cancel-co:hover {
+  background-color: #34324f;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.dark .pop-up {
+  background-color: #2d243bbd;
+}
+body.dark .pop-up-content {
+  color: var(--dark5);
+}
+
+body.dark .check-out,
+body.dark .cancel-co {
+  color: var(--dark7);
+  background-color: var(--dark4);
+}
+
+body.dark .check-out:hover,
+body.dark .cancel-co:hover {
+  background-color: var(--dark3);
+}
+
+/* ======================================================= */
+/*                         ABOUT US                        */
+/* ======================================================= */
+
+body .profile.container {
+  background-color: #a7c0e05f;
+}
+
+body .profile-content {
+  background-color: rgba(255, 255, 255, 0.619);
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.dark .profile.container {
+  background-color: var(--dark3);
+}
+
+body.dark .profile-content {
+  background-color: #48466072;
+}
+
+/* ====================================================== */
+/*                       ADD PRODUCT                      */
+/* ====================================================== */
+
+body .add-product table {
+  background-color: #a7c0e05f;
+}
+body .add-product input[type="submit"] {
+  background-color: var(--light3);
+}
+body .add-product input[type="submit"]:hover {
+  background-color: #a7c0e05f;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.dark .add-product table {
+  background-color: #48466072;
+}
+body.dark .add-product input[type="submit"] {
+  background-color: var(--dark5);
+}
+body.dark .add-product input[type="submit"]:hover {
+  background-color: #a7c0e05f;
+}
+
+
